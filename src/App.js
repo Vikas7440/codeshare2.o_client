@@ -4,7 +4,7 @@ import CodeEditor from './components/Editor';
 import { requestNotificationPermission, showNotification } from './utils/notificationHelper';
 import './App.css';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://codeshare2-o-server-5avl.onrender.com');
 
 function App() {
   const [code, setCode] = useState('');
