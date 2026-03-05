@@ -24,7 +24,7 @@ export const showNotification = (title, body) => {
     if (document.hidden && Notification.permission === "granted") {
         new Notification(title, {
             body: body,
-            icon: "/favicon.ico"
+            icon: "/q1"
         });
     } else {
         console.log("Notification suppressed (tab not hidden or permission not granted)");
