@@ -50,7 +50,7 @@ function App() {
         <h1>CodeShare 2.0</h1>
         <p>Real-time collaborative editor with background notifications</p>
       </header>
-      <main style={{ padding: '20px' }}>
+      <main>
         <CodeEditor code={code} setCode={handleCodeChange} />
       </main>
     </div>

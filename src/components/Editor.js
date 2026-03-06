@@ -8,14 +8,15 @@ import 'prismjs/themes/prism.css';
 const CodeEditor = ({ code, setCode }) => {
     return (
         <div style={{
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            minHeight: '400px',
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
             fontFamily: '"Fira code", "Fira Mono", monospace',
             fontSize: 14,
             backgroundColor: '#f8f9fa'
         }}>
             <Editor
+                className="code-editor-inner"
                 value={code}
                 onValueChange={(code) => setCode(code)}
                 highlight={(code) => highlight(code, languages.js)}
@@ -23,6 +24,10 @@ const CodeEditor = ({ code, setCode }) => {
                 style={{
                     fontFamily: '"Fira code", "Fira Mono", monospace',
                     fontSize: 14,
+                    outline: 'none',
+                    border: 'none',
+                    height: '100%',
+                    width: '100%'
                 }}
             />
         </div>
